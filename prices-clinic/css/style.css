@@ -31,7 +31,7 @@ body {
     min-width: 330px;
     align-items: center;
     padding: 35px 0;
-    background: url(/img/bg.webp) no-repeat border-box;
+    background: url(../img/bg.webp) no-repeat border-box;
     background-size: cover;
     text-align: center;
 }
