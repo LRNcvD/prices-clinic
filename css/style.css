@@ -4,7 +4,7 @@
 } */
 
 /* Шрифты */
-  .roboto-medium, td {
+  .roboto-medium, td, * {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -24,26 +24,38 @@
 	box-sizing: border-box; /* Это свойсто чтоб был четкий размер блока и не суммировался со всем остальным(отступы и прочее) */
 	list-style: none; /* Обнуление дизайна списка */
 	border: none;
+    text-decoration: none;
 }
 
 body {
-    padding-top: 70px;
-    background-image: url(/img/bg.webp);
-    background-repeat: no-repeat;
+    min-width: 330px;
+    align-items: center;
+    padding: 35px 0;
+    background: url(/img/bg.webp) no-repeat border-box;
     background-size: cover;
-    background-color: #f0debd;
     text-align: center;
 }
+a.menu {
+    max-width: max-content;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.55);
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.35);
+}
+a.menu:hover {
+    background-color: rgba(255, 255, 255, 0.85);
+}
 h1 {
+    text-align: center;
     display: block;
+}
+h1, table {
     width: 75%;
-    margin: auto;
 }
 
 table {
-    margin: 70px auto;
     border-collapse: collapse;
-    width: 75%;
 }
 td {
     border: 1px solid rgb(53, 52, 52);
@@ -62,25 +74,21 @@ tr:nth-child(even) {
     h1 {
         font-size: 20px;
     }
-    td {
+    td, a {
         font-size: 12px;
-    }
-    table {
-        margin: 35px auto;
     }
 }
 @media (max-width: 470px) {
     h1 {
         font-size: 14px;
     }
-    td {
+    td, a {
         font-size: 9px;
     }
-    table {
-        margin: 35px auto;
-    }
 }
-
+h1, table {
+    margin: 35px auto;
+}
 
 
 	
