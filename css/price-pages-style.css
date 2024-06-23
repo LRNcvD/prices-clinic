@@ -4,7 +4,7 @@
 } */
 
 /* Шрифты */
-  .roboto-regular, .container-menu {
+  .roboto-regular, .container-price-table {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -18,8 +18,12 @@
     font-weight: 700;
     font-style: normal;
     font-size: 42px;
-  }
-
+}
+@media (max-width: 590px) {
+       h1.container-page-name {
+        font-size: 36px;
+       }
+}
 * {
 	padding: 0;
     margin: 0;
@@ -30,28 +34,37 @@
     color: black;
 }
 /* Общие свойства */
-.container, nav.container-menu {
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+/* Свойства */
 body {
     min-width: 360px;
-    padding: 35px 0;
+    padding: 75px 35px;
     background: url(/prices-clinic/img/bg.webp) no-repeat;
     background-size: cover;
 }
 .container {
-    margin: 35px;
+    margin: 0 auto;
+    max-width: 900px;
 }
 div.container-page-name {
     margin-bottom: 35px;
 }
-
-a.container-menu {
-    margin: 5px auto;
+table.container-price-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+tr:nth-child(even) {
     background-color: #ffffff9e;
-    padding: 15px;
-    border-radius: 5px;
+}
+
+td, th {
+    padding: 3px 5px;
+    border: 1px solid black;
+}
+td.price {
+    text-align: right;
 }
