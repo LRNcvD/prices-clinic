@@ -48,8 +48,11 @@ body {
 div.container-page-name {
     margin-bottom: 35px;
 }
-
+nav.container-menu {
+    max-width: max-content;
+}
 a.container-menu {
+    width: 100%;
     margin: 5px auto;
     background-color: #ffffff9e;
     padding: 15px;

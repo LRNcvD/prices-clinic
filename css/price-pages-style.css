@@ -4,7 +4,7 @@
 } */
 
 /* Шрифты */
-  .roboto-regular, .container-price-table {
+  .roboto-regular, .container-price-table, .container-button-back {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -50,14 +50,18 @@ body {
     margin: 0 auto;
     max-width: 900px;
 }
-div.container-page-name {
+div.container-page-name, .container-button-back {
     margin-bottom: 35px;
+}
+.container-button-back {
+    padding: 15px;
+    border-radius: 5px;
 }
 table.container-price-table {
     width: 100%;
     border-collapse: collapse;
 }
-tr:nth-child(even) {
+tr:nth-child(even), .container-button-back {
     background-color: #ffffff9e;
 }
 
