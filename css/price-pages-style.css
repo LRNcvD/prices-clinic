@@ -42,7 +42,7 @@
 /* Свойства */
 body {
     min-width: 360px;
-    padding: 75px 35px;
+    padding: 0 35px;
     background: url(/prices-clinic/img/bg.webp) no-repeat;
     background-size: cover;
 }
