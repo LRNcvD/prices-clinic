@@ -1,0 +1,86 @@
+/* Сдесь мы дикларируем переменные для всего документа */
+/* :root {
+	
+} */
+
+/* Шрифты */
+  .roboto-medium, td {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+  }
+
+.roboto-bold, h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+  }
+
+* {
+	padding: 0;
+    margin: 0;
+	box-sizing: border-box; /* Это свойсто чтоб был четкий размер блока и не суммировался со всем остальным(отступы и прочее) */
+	list-style: none; /* Обнуление дизайна списка */
+	border: none;
+}
+
+body {
+    padding-top: 70px;
+    background-image: url(/img/bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f0debd;
+    text-align: center;
+}
+h1 {
+    display: block;
+    width: 75%;
+    margin: auto;
+}
+
+table {
+    margin: 70px auto;
+    border-collapse: collapse;
+    width: 75%;
+}
+td {
+    border: 1px solid rgb(53, 52, 52);
+    padding: 5px 5px;
+}
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.name {
+    text-align: left;
+}
+.price {
+    text-align: right;
+}
+@media (max-width: 830px) {
+    h1 {
+        font-size: 20px;
+    }
+    td {
+        font-size: 12px;
+    }
+    table {
+        margin: 35px auto;
+    }
+}
+@media (max-width: 470px) {
+    h1 {
+        font-size: 14px;
+    }
+    td {
+        font-size: 9px;
+    }
+    table {
+        margin: 35px auto;
+    }
+}
+
+
+
+	
