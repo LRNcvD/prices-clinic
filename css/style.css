@@ -37,6 +37,7 @@
 }
 
 body {
+    padding-bottom: 35px;
     min-width: 360px;
     background: url(/prices-clinic/img/bg.webp) no-repeat;
     background-size: cover;
