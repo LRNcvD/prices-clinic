@@ -67,7 +67,7 @@ table.container-price-table {
     width: 100%;
     border-collapse: collapse;
 }
-tr:nth-child(even), .container-button-back {
+tr:nth-child(even), th, .container-button-back {
     background-color: #ffffff9e;
 }
 
